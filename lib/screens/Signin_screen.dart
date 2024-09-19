@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:obd/screens/Signup_screen.dart';
+import 'package:obd/variables/colors.dart';
+import 'package:obd/variables/fonts.dart';
 
 class SigninScreen extends StatefulWidget {
   const SigninScreen({super.key});
@@ -16,7 +18,7 @@ class _SigninScreenState extends State<SigninScreen> {
     final width = MediaQuery.sizeOf(context).width;
 
     return Scaffold(
-      backgroundColor: Color(0xFF0A1128),
+      backgroundColor: customBlueColor,
       body: Center(
         child: Container(
           height: height * .85,
@@ -25,33 +27,20 @@ class _SigninScreenState extends State<SigninScreen> {
             children: [
               Text(
                 'OBD APP',
-                style: GoogleFonts.montserrat(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w800,
-                    fontSize: 43),
-              ),
+                style: Montserrat(43, Colors.white, FontWeight.w800)),
               SizedBox(
                 height: 15,
               ),
               Text(
                 'Please login to OBD APP',
-                style: GoogleFonts.montserrat(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 14,
-                ),
+                style: Montserrat(14, Colors.white, FontWeight.w600)
               ),
               SizedBox(
                 height: 15,
               ),
               Text(
                 'Login to get max of the services',
-                style: GoogleFonts.montserrat(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w400,
-                  fontSize: 13,
-                ),
-              ),
+                style:Montserrat(13, Colors.white, FontWeight.w600)),
               SizedBox(
                 height: 50,
               ),
