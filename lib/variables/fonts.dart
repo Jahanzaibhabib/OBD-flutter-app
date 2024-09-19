@@ -14,3 +14,15 @@ TextStyle Montserrat(double fontSize , Color color , FontWeight fontWeight){
 
   );
 }
+
+TextStyle Poppins(double fontSize , Color color , FontWeight fontWeight){
+  return GoogleFonts.poppins(
+
+    // textStyle: TextStyle();
+      fontSize: fontSize,
+      color : color,
+      fontWeight: fontWeight
+
+
+  );
+}
