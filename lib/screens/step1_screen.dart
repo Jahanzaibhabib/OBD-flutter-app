@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:obd/components/customButton.dart';
 import 'package:obd/components/inputField.dart';
+import 'package:obd/providers/is_drawer_open_provider.dart';
+import 'package:obd/screens/appbar.dart';
 import 'package:obd/screens/step2_screen.dart';
 import 'package:obd/variables/colors.dart';
 import 'package:obd/variables/fonts.dart';
 import 'package:obd/variables/lists_for_step1.dart';
+import 'package:obd/variables/variables.dart';
+import 'package:provider/provider.dart';
+import 'drawer.dart';
+
 
 
 class Step1Screen extends StatelessWidget {
@@ -18,6 +24,10 @@ class Step1Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+    appBar:CustomAppbar(),
+      drawer: CustomDrawer(context: context),
+
       body: Container(
         width: MediaQuery.of(context).size.width,
         color: customBlueColor,

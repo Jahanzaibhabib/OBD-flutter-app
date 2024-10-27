@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:obd/screens/Signin_screen.dart';
 import 'package:obd/variables/colors.dart';
+import 'drawer.dart';
 import 'package:obd/variables/fonts.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -18,6 +19,8 @@ class _SignupScreenState extends State<SignupScreen> {
     final width = MediaQuery.sizeOf(context).width;
 
     return Scaffold(
+      drawer: CustomDrawer(context: context),
+
       backgroundColor: customBlueColor,
       body: Center(
         child: Container(

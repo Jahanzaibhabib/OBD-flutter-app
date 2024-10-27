@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:obd/variables/colors.dart';
 import 'package:obd/variables/fonts.dart';
 import 'package:obd/variables/media_query.dart';
+import 'drawer.dart';
 
 class Step4Screen extends StatelessWidget {
   const Step4Screen({super.key});
@@ -11,7 +12,8 @@ class Step4Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(child:
     Scaffold(
-      
+      drawer: CustomDrawer(context: context),
+
       body: Container(
         width: width(context),
         color: customBlueColor,
