@@ -25,7 +25,7 @@ class Step1Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-    appBar:CustomAppbar(),
+    appBar:CustomAppbar(context),
       drawer: CustomDrawer(context: context),
 
       body: Container(
